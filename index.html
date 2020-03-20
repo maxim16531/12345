@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>maxim</title>
+ </head>
+ <body>
+     <form>
+         <button onclick="alert(s.products();)">Кнопка</button>
+         <input type="text" onclick="alert(s.products();)"/>
+     </form>
+     <script>
+         class Shop {
+    constructor(name) {
+        this.name = name;
+        this.count = 0;
+    }
+   products() {
+       if(HTMLButtonElement){
+        this.count ++;  
+    alert(this.name + "Осталось столько - "  + this.count);
+       }
+ //   this.count ++;  
+   // alert(this.name + "Осталось столько - "  + this.count);
+   }
+};
+var s = new Shop("apple");
+s.products();
+</script>
+ </body>
+</html>
+
